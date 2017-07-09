@@ -1,11 +1,17 @@
-require "spec_helper"
-
 RSpec.describe CompactBlank do
-  it "has a version number" do
-    expect(CompactBlank::VERSION).not_to be nil
-  end
+  describe "Array#compact_blank" do
+    subject { source.compact_blank }
 
-  it "does something useful" do
-    expect(false).to eq(true)
+    using CompactBlank
+    using RSpec::Parameterized::TableSyntax
+
+    where(:source, :compacted) do
+      ["a", nil, "b", ""]  | ["a", "b"]
+      ["a", "b", "c", "d"] | ["a", "b", "c", "d"]
+    end
+
+    with_them do
+      it { should eq compacted }
+    end
   end
 end

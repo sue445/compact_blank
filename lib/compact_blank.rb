@@ -1,5 +1,10 @@
 require "compact_blank/version"
+require "active_support/core_ext/object/blank"
 
 module CompactBlank
-  # Your code goes here...
+  refine Array do
+    def compact_blank
+      reject(&:blank?)
+    end
+  end
 end
