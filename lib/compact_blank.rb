@@ -6,5 +6,9 @@ module CompactBlank
     def compact_blank
       reject(&:blank?)
     end
+
+    def compact_blank!
+      reject!(&:blank?)
+    end
   end
 end
