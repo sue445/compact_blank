@@ -1,8 +1,6 @@
 # CompactBlank
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/compact_blank`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Adds `compact_blank` and `compact_blank!` to `Array` and `Hash`
 
 ## Installation
 
@@ -22,7 +20,42 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### `Array#compact_blank`, `Array#compact_blank!`
+```ruby
+using CompactBlank
+
+array = ["a", nil, "b", ""]
+
+array.compact
+#=> ["a", "b", ""]
+
+array.compact_blank
+#=> ["a", "b"]
+
+array.compact_blank!
+#=> ["a", "b"]
+array
+#=> ["a", "b"]
+```
+
+### `Hash#compact_blank`, `Hash#compact_blank!`
+```ruby
+using CompactBlank
+
+hash = { a: "1", b: nil, c: "3", d: "" }
+
+# NOTE: Hash#compact is feature of activesupport
+hash.compact
+#=> {:a=>"1", :c=>"3", :d=>""}
+
+hash.compact_blank
+#=> {:a=>"1", :c=>"3"}
+
+hash.compact_blank!
+#=> {:a=>"1", :c=>"3"}
+hash
+#=> {:a=>"1", :c=>"3"}
+```
 
 ## Development
 
@@ -32,7 +65,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/compact_blank.
+Bug reports and pull requests are welcome on GitHub at https://github.com/sue445/compact_blank.
 
 
 ## License

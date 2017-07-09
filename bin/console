@@ -10,5 +10,7 @@ require "compact_blank"
 # require "pry"
 # Pry.start
 
+using CompactBlank
+
 require "irb"
 IRB.start(__FILE__)

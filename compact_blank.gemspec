@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["sue445"]
   spec.email         = ["sue445@sue445.net"]
 
-  spec.summary       = %q{Add compact_blank to Array and Hash}
-  spec.description   = %q{Add compact_blank to Array and Hash}
+  spec.summary       = %q{Adds compact_blank and compact_blank! to Array and Hash}
+  spec.description   = %q{Adds compact_blank and compact_blank! to Array and Hash}
   spec.homepage      = "https://github.com/sue445/compact_blank"
   spec.license       = "MIT"
 
