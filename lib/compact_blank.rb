@@ -16,5 +16,9 @@ module CompactBlank
     def compact_blank
       reject { |_, v| v.blank? }
     end
+
+    def compact_blank!
+      reject! { |_, v| v.blank? }
+    end
   end
 end
