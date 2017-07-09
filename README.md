@@ -5,6 +5,7 @@ Adds `compact_blank` and `compact_blank!` to `Array` and `Hash`
 [![Build Status](https://travis-ci.org/sue445/compact_blank.svg?branch=master)](https://travis-ci.org/sue445/compact_blank)
 [![Coverage Status](https://coveralls.io/repos/github/sue445/compact_blank/badge.svg)](https://coveralls.io/github/sue445/compact_blank)
 [![Code Climate](https://codeclimate.com/github/sue445/compact_blank.png)](https://codeclimate.com/github/sue445/compact_blank)
+[![Dependency Status](https://gemnasium.com/badges/github.com/sue445/compact_blank.svg)](https://gemnasium.com/github.com/sue445/compact_blank)
 
 ## Installation
 
