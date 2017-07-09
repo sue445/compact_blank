@@ -8,8 +8,12 @@ rvm:
 - 2.4.1
 - ruby-head
 before_install: gem install bundler -v 1.14.6
+before_script:
+- export CODECLIMATE_REPO_TOKEN=5a1c95e9c71ba0cd4c1a5aef955b7fe0cb4958d3b78e6b94c6a62d0653136ea0
+- export CI=true
 script:
 - bundle exec rspec
+- bundle exec codeclimate-test-reporter
 branches:
   only:
   - master
