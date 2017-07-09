@@ -11,4 +11,10 @@ module CompactBlank
       reject!(&:blank?)
     end
   end
+
+  refine Hash do
+    def compact_blank
+      reject { |_, v| v.blank? }
+    end
+  end
 end
