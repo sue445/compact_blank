@@ -7,7 +7,9 @@ rvm:
 - 2.4.1
 - 2.5.0
 - ruby-head
-before_install: gem install bundler -v 1.14.6
+before_install:
+- gem update --system --no-document
+- gem install bundler -v 1.16.1 --no-document
 before_script:
 - export CODECLIMATE_REPO_TOKEN=5a1c95e9c71ba0cd4c1a5aef955b7fe0cb4958d3b78e6b94c6a62d0653136ea0
 - export CI=true
