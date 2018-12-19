@@ -8,7 +8,6 @@ rvm:
   - 2.5
   - ruby-head
 before_install:
-  - gem update --system --no-document
   - gem install bundler --no-document
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
