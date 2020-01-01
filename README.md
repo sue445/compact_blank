@@ -3,7 +3,7 @@
 Adds `compact_blank` and `compact_blank!` to `Array` and `Hash`
 
 [![Gem Version](https://badge.fury.io/rb/compact_blank.svg)](https://badge.fury.io/rb/compact_blank)
-[![Build Status](https://travis-ci.org/sue445/compact_blank.svg?branch=master)](https://travis-ci.org/sue445/compact_blank)
+[![Build Status](https://github.com/sue445/compact_blank/workflows/test/badge.svg?branch=master)](https://github.com/sue445/compact_blank/actions?query=workflow%3Atest)
 [![Coverage Status](https://coveralls.io/repos/github/sue445/compact_blank/badge.svg)](https://coveralls.io/github/sue445/compact_blank)
 [![Code Climate](https://codeclimate.com/github/sue445/compact_blank.png)](https://codeclimate.com/github/sue445/compact_blank)
 
