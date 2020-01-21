@@ -29,6 +29,7 @@ jobs:
         include:
           - ruby: rubylang/ruby:master-nightly-bionic
             allow_failures: "true"
+
     steps:
       - uses: actions/checkout@v2
       - name: Cache vendor/bundle
