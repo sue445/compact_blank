@@ -7,6 +7,11 @@ Adds `compact_blank` and `compact_blank!` to `Array` and `Hash`
 [![Coverage Status](https://coveralls.io/repos/github/sue445/compact_blank/badge.svg)](https://coveralls.io/github/sue445/compact_blank)
 [![Code Climate](https://codeclimate.com/github/sue445/compact_blank.png)](https://codeclimate.com/github/sue445/compact_blank)
 
+## :warning: `compact_blank` gem is deprecated since `activesupport` 6.1+
+Use `activesupport`'s `#compact_blank` instead of `compact_blank`
+
+see. https://github.com/sue445/compact_blank/issues/11
+
 ## Installation
 
 Add this line to your application's Gemfile:
