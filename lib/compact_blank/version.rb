@@ -1,3 +1,3 @@
 module CompactBlank
-  VERSION = "0.1.0"
+  VERSION = "0.1.999"
 end
